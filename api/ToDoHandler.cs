@@ -1,3 +1,4 @@
+
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -22,13 +23,7 @@ namespace Todo.Backend
 {
     public static class ToDoHandler
     {
-        // Error list created from: 
-        // - https://github.com/dotnet/efcore/blob/main/src/EFCore.SqlServer/Storage/Internal/SqlServerTransientExceptionDetector.cs
-        // - https://docs.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconfigurableretryfactory?view=sqlclient-dotnet-standard-4.1
-        // - https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-error-messages
-        // Manually added also
-        // 0, 18456
-        private static List<int> _transientErrors = new List<int> {
+            private static List<int> _transientErrors = new List<int> {
             233, 997, 921, 669, 617, 601, 121, 64, 20, 0, 53, 258,
             1203, 1204, 1205, 1222, 1221,
             1807,
