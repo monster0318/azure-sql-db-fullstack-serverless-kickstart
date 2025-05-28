@@ -20,6 +20,7 @@ using System.Text;
 
 namespace Todo.Backend.EFCore
 {
+
     [Table("todos")]
     public class Todo {
 
